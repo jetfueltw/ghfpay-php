@@ -31,7 +31,7 @@ class UnitTest extends TestCase
     {
         $faker = Factory::create();
         $tradeNo = date('YmdHis').rand(1000, 9999);
-        $channel = Channel::UNIONPAY;
+        $channel = Channel::ALIPAY;
         $amount = 99;
         $notifyUrl = 'http://a.a.com';
         $returnUrl = 'http://a.a.com';
@@ -74,7 +74,7 @@ class UnitTest extends TestCase
     {
         $faker = Factory::create();
         $tradeNo = date('YmdHis').rand(1000, 9999);
-        $bank = Bank::ICBC;
+        $bank = Bank::CMB;
         $amount = 2;
         $returnUrl = 'http://www.yahoo.com';//$faker->url;
         $notifyUrl = 'http://www.yahoo.com';//'$faker->url;
